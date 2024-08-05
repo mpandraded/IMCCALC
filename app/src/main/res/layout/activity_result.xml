@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:text="Seu imc é:"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textSize="38sp"
+        tools:text="27.01" />
+
+    <TextView
+        android:id="@+id/classificacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        tools:text="Classificação Normal" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"
+        android:layout_marginTop="260dp"
+        android:text="IMC TABLE"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:stretchColumns="*"
+        android:background="#000000"
+        android:text="@string/tabela_imc">
+
+        <TableRow android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#CCCCCC"
+                android:text="MENOR QUE 18,5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#CCCCCC"
+                android:text="ABAIXO DO PESO" />
+        </TableRow>
+
+        <TableRow android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#CCCCCC"
+                android:text="ENTRE 18.5 e 24,9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#CCCCCC"
+                android:text="NORMAL" />
+        </TableRow>
+       <TableRow android:background="#FFFFFF">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CCCCCC"
+            android:text="ENTRE 25.0 e 29,9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CCCCCC"
+            android:text="SOBREPESO" />
+       </TableRow>
+        <TableRow android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#CCCCCC"
+                android:text="ENTRE 30.0 e 39,9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#CCCCCC"
+                android:text="OBESIDADE" />
+        </TableRow>
+        <TableRow android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#CCCCCC"
+                android:text="MAIOR QUE 40" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#CCCCCC"
+                android:text="OBESIDADE GRAVE" />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</RelativeLayout>

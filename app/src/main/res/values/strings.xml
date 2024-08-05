@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">IMC CALC</string>
+    <string name="click">Click</string>
+    <string name="message_classificação">Classificação, %1$s! </string>
+    <string name="tabela_imc">TABELA IMC</string>
+</resources>
