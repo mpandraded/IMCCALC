@@ -6,6 +6,7 @@ import android.provider.Telephony.Mms.Intents
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -27,18 +28,25 @@ class MainActivity : AppCompatActivity() {
        // val edtResultado: TextView = findViewById(R.id.edtText)
 
         btnCalc.setOnClickListener {
+            var alturaStr: String = edtAltura.text.toString()
+            var pesoStr: String = edtPeso.text.toString()
 
-            var altura: Float = edtAltura.text.toString().toFloat()
-            var alturaFinal: Float = altura * altura
-            var peso: Float = edtPeso.text.toString().toFloat()
-            val result: Float = peso / alturaFinal
-            //edtResultado.text = result.toString()
-            //println("MEU IMC " + result)
-            val intent = Intent( this, ResultActivity::class.java)
-                .apply {
-                    putExtra("Result_Extra", result)
-                }
-            startActivity(intent)
-        }
+            if (alturaStr.isNotEmpty() && pesoStr.isNotEmpty()){
+                var altura: Float = alturaStr.toFloat()
+                var peso: Float = pesoStr.toFloat()
+                var alturaFinal: Float = altura * altura
+                val result: Float = peso / alturaFinal
+                //edtResultado.text = result.toString()
+                //println("MEU IMC " + result)
+                val intent = Intent( this, ResultActivity::class.java)
+                    .apply {
+                        putExtra("Result_Extra", result)
+                    }
+                startActivity(intent)
+        } else {
+                Toast.makeText(this, "Por Favor informar todos os campos", Toast.LENGTH_LONG).show()
+
+            }        }
+
     }
 }
