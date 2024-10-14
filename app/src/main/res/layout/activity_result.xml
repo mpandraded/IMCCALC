@@ -6,55 +6,89 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
     tools:context=".ResultActivity">
+    <LinearLayout
+        android:id="@+id/vg_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/gradiente_bg"
+        android:orientation="vertical">
 
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_weight"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:layout_margin="17dp"
+            android:layout_marginStart="17dp"
+            android:textColor="@color/white"
+            android:text="Calculadora IMC" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="17dp"
+            android:textColor="@color/white"
+            android:text="Confirme abaixo o seu resultado e classificação"/>
+
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:padding="16dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="38sp"
+            android:textColor="@color/white"
+            tools:text="27.01" />
+
+    </LinearLayout>
     <TextView
         android:text="Seu imc é:"
         android:textStyle="bold"
         android:textSize="25dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="300dp"
         android:textAlignment="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:padding="16dp"
-        android:textAlignment="center"
-        android:textSize="38sp"
-        tools:text="27.01" />
-
-    <TextView
         android:id="@+id/classificacao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/result"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="330dp"
         android:textAlignment="center"
-        android:textSize="35sp"
+        android:textSize="24sp"
         tools:text="Classificação Normal" />
-
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="420dp"
         android:paddingBottom="16dp"
-        android:layout_marginTop="260dp"
         android:text="IMC TABLE"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold" />
-
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="450dp"
         android:stretchColumns="*"
         android:background="#000000"
         android:text="@string/tabela_imc">
@@ -129,9 +163,5 @@
                 android:background="#CCCCCC"
                 android:text="OBESIDADE GRAVE" />
         </TableRow>
-
-
     </TableLayout>
-
-
 </RelativeLayout>
