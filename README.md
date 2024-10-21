@@ -12,7 +12,7 @@ Calculadora de IMC foi um aplicativo que desenvolvi para dar meus primeiros pass
 * Kotlin
 * Activity para host de telas
 * ViewGroup
-    * RelativeLayout
+    * ConstraintLayout
     * LinearLayout
 - Components de UI
     - TextView
