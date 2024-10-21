@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
+const val KEY_RESULT_IMC = "ResultActivity.Result_Extra"
+
 class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +24,7 @@ class ResultActivity : AppCompatActivity() {
         }
         val tvResult = findViewById<TextView>(R.id.result)
         val tvClassificacao = findViewById<TextView>(R.id.classificacao)
-        val result = intent.getFloatExtra("Result_Extra", 0.1f)
+        val result = intent.getFloatExtra(KEY_RESULT_IMC, 0.1f)
         tvResult.text = result.toString()
 
 

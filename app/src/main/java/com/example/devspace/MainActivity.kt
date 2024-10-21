@@ -11,6 +11,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
+import kotlin.math.pow
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,16 +26,16 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         val btnCalc: Button = findViewById(R.id.btnCalc)
-        val edtAltura : EditText = findViewById(R.id.edtHight)
-        val edtPeso: EditText = findViewById(R.id.edtPeso)
+        val edtAltura: TextInputEditText = findViewById(R.id.edtHight);
+        val edtPeso: TextInputEditText = findViewById(R.id.edtPeso)
        // val edtResultado: TextView = findViewById(R.id.edtText)
 
         btnCalc.setOnClickListener {
-            var alturaStr: String = edtAltura.text.toString()
-            var pesoStr: String = edtPeso.text.toString()
+            var alturaStr: String = edtAltura.getText().toString();
+            var pesoStr: String = edtPeso.getText().toString();
 
             if (alturaStr.isNotEmpty() && pesoStr.isNotEmpty()){
-                var altura: Float = alturaStr.toFloat()
+                var altura: Float = alturaStr.toFloat();
                 var peso: Float = pesoStr.toFloat()
                 var alturaFinal: Float = altura * altura
                 val result: Float = peso / alturaFinal
@@ -40,7 +43,7 @@ class MainActivity : AppCompatActivity() {
                 //println("MEU IMC " + result)
                 val intent = Intent( this, ResultActivity::class.java)
                     .apply {
-                        putExtra("Result_Extra", result)
+                        putExtra(KEY_RESULT_IMC, result)
                     }
                 startActivity(intent)
         } else {

@@ -99,12 +99,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#CCCCCC"
+                android:textColor="@color/primary_900"
                 android:text="MENOR QUE 18,5" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#CCCCCC"
+                android:textColor="@color/primary_900"
                 android:text="ABAIXO DO PESO" />
         </TableRow>
 
@@ -114,12 +116,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#CCCCCC"
+                android:textColor="@color/primary_900"
                 android:text="ENTRE 18.5 e 24,9" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#CCCCCC"
+                android:textColor="@color/primary_900"
                 android:text="NORMAL" />
         </TableRow>
        <TableRow android:background="#FFFFFF">
@@ -127,12 +131,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#CCCCCC"
+            android:textColor="@color/primary_900"
             android:text="ENTRE 25.0 e 29,9" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#CCCCCC"
+            android:textColor="@color/primary_900"
             android:text="SOBREPESO" />
        </TableRow>
         <TableRow android:background="#FFFFFF">
@@ -141,12 +147,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#CCCCCC"
+                android:textColor="@color/primary_900"
                 android:text="ENTRE 30.0 e 39,9" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#CCCCCC"
+                android:textColor="@color/primary_900"
                 android:text="OBESIDADE" />
         </TableRow>
         <TableRow android:background="#FFFFFF">
@@ -155,12 +163,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#CCCCCC"
+                android:textColor="@color/primary_900"
                 android:text="MAIOR QUE 40" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#CCCCCC"
+                android:textColor="@color/primary_900"
                 android:text="OBESIDADE GRAVE" />
         </TableRow>
     </TableLayout>
