@@ -5,13 +5,14 @@ Calculadora de IMC foi um aplicativo que desenvolvi para dar meus primeiros pass
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="/app/evidence/Screenshot_IMC_main.png" width="260">&emsp;<img src="/app/evidence/Screenshot_NumericInput.png" width="260">&emsp;<img src="/app/evidence/Screenshot_Result.png" width="260">
+<img src="https://github.com/user-attachments/assets/8771be96-0bab-4740-85eb-f7a254d5ba61" width="260">&emsp;<img src="https://github.com/user-attachments/assets/09ed1ffc-78b9-43a4-83d9-26b145eab83e" width="260">&emsp;
+
 
 ## Tecnologias
 * Kotlin
 * Activity para host de telas
 * ViewGroup
-    * RelativeLayout
+    * ConstraintLayout
     * LinearLayout
 - Components de UI
     - TextView
